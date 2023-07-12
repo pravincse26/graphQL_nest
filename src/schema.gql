@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Task {
+  id: Float!
+  title: String!
+  description: String!
+}
+
+type Query {
+  tasks: [Task!]!
+  task(id: Float!): Task!
+}
+
+type Mutation {
+  createTask(title: String!, description: String!): Task!
+  updateTask(id: Float!, title: String!, description: String!): Task!
+  deleteTask(id: Float!): Boolean!
+}
